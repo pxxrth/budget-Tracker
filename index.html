@@ -10,24 +10,32 @@
     <h1 class="title">Budget-Tracker</h1>
     
     <div id="hero">
-    <input type="text" id="Description" placeholder="Description">
-    <input type="number" id="amount" placeholder="Amount">
-    <select id="type">
-        <option>Income</option>
-        <option>Expenses</option>
-    </select>
+        <input type="text" id="Description" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="type">
+            <option>Income</option>
+            <option>Expenses</option>
+        </select>
     </div>
 
-    <button id="transaction">Add Transaction</button>
+    <div class="button-container">
+        <button id="transaction">Add Transaction</button>
+    </div>
     <br>
 
     <div id="transactionHistory">
-        <h3>Salary</h3>
-        <button>delete</button>
-        <h3>Groceries</h3>
-        <button>delete</button>
-        <h3>Book</h3>
-        <button>delete</button>
+        <div class="transaction-item">
+            <h3>Salary</h3>
+            <button class="delete-btn">delete</button>
+        </div>
+        <div class="transaction-item">
+            <h3>Groceries</h3>
+            <button class="delete-btn">delete</button>
+        </div>
+        <div class="transaction-item">
+            <h3>Book</h3>
+            <button class="delete-btn">delete</button>
+        </div>
     </div>
     <br>
     <div id="total">
