@@ -10,39 +10,39 @@
     <h1 class="title">Budget-Tracker</h1>
     
     <div id="hero">
-        <input type="text" id="Description" placeholder="Description">
+        <input type="text" id="description" placeholder="Description">
         <input type="number" id="amount" placeholder="Amount">
+
         <select id="type">
-            <option>Income</option>
-            <option>Expenses</option>
+            <option value="income">Income</option>
+            <option value="expenses">Expenses</option>
         </select>
     </div>
 
     <div class="button-container">
-        <button id="transaction">Add Transaction</button>
+        <button id="addTransaction">Add Transaction</button>
     </div>
-    <br>
+
+    <div id="divider-line"></div>
 
     <div id="transactionHistory">
-        <div class="transaction-item">
-            <h3>Salary</h3>
-            <button class="delete-btn">delete</button>
-        </div>
-        <div class="transaction-item">
-            <h3>Groceries</h3>
-            <button class="delete-btn">delete</button>
-        </div>
-        <div class="transaction-item">
-            <h3>Book</h3>
-            <button class="delete-btn">delete</button>
-        </div>
-    </div>
-    <br>
+        <!-- Transactions will be added here dynamically -->
+    </div> 
+    <div id="divider-line"></div>
     <div id="total">
-        <h3>Balance</h3>
-        <h3>Income</h3>
-        <h3>Expenses</h3>
+        <div class="totalTab">
+            <h3>Balance</h3>
+            <div class="totalNumber">0</div>
+        </div>
+        <div class="totalTab">
+            <h3>Income</h3>
+            <div class="totalNumber">0</div>
+        </div>
+        <div class="totalTab">
+            <h3>Expenses</h3>
+            <div class="totalNumber">0</div>
+        </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="main.js"></script>
 </html>
